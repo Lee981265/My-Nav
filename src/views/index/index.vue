@@ -30,7 +30,11 @@
                     </div>
                     <h3>{{List.Name}}</h3>
                   </div>
-                  <h4>{{List.Title}}</h4>
+                  <h4 style="overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;">{{List.Title}}</h4>
                 </div>
               <!-- </a> -->
             </div>
@@ -241,7 +245,7 @@
         h4{
           font-size: 13px;
           color: $font2;
-          display: -webkit-box !important;
+          display: -webkit-box;
           overflow: hidden;
           text-overflow: ellipsis;
           word-break: break-all;
